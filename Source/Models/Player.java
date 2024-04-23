@@ -1,4 +1,4 @@
-package Game.Models;
+package Source.Models;
 public class Player {
     String name;
     Symbol symbol;

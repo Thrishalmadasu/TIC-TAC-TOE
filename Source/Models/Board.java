@@ -1,4 +1,4 @@
-package Game.Models;
+package Source.Models;
 import java.util.*;
 public class Board {
 

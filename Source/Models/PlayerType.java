@@ -1,4 +1,4 @@
-package Game.Models;
+package Source.Models;
 public enum PlayerType {
     HUMAN,BOT;
 }
