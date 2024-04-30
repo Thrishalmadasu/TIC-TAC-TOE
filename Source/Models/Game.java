@@ -111,11 +111,10 @@ public class Game {
         if(row < 0 || row >= board.getSize() || col < 0 || col >= board.getSize()){
             return false;
         }
-        Cell cell = move.getCell();
+        Cell cell = board.getBoard().get(row).get(col);
         if(cell.getCellState() != CellState.EMPTY){
             return false;
         }
-
 
         return true;
     }
