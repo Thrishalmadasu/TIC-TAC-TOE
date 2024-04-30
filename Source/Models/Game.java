@@ -83,9 +83,11 @@ public class Game {
          //Make a move
          Move move = currentPlayer.makeMove(board);
          //Validate the move
-            if(!isValidMove(move)){
-                throw new InvalidMoveException("Invalid Move made by"+currentPlayer.getName());
-            }
+         while(!isValidMove(move)){
+            System.out.println("Please enter a valid move "+currentPlayer.getName());
+            move = currentPlayer.makeMove(board);
+         }
+            
          int row = move.getCell().getRow();
          int col = move.getCell().getCol();
          Cell cellToChange = board.getBoard().get(row).get(col);
